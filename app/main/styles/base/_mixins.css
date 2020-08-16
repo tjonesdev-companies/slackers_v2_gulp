@@ -1,0 +1,58 @@
+/* Flexbox */
+@define-mixin flex $display: flex, $dir: initial, $align: initial, $justify: initial, $wrap: initial {
+  @if $display {display: $display}
+  @if $dir {flex-direction: $dir;}
+  @if $align {align-items: $align;}
+  @if $justify {justify-content: $justify;}
+  @if $wrap {flex-wrap: $wrap;}
+}
+
+/* Media Queries */
+@define-mixin xs-devices {
+  @media (max-width: 550px) {
+    @mixin-content;
+  }
+}
+@define-mixin small-devices {
+  @media (min-width: 550px) {
+    @mixin-content;
+  }
+}
+@define-mixin medium-devices {
+  @media (min-width: 775px) {
+    @mixin-content;
+  }
+}
+@define-mixin large-devices {
+  @media (min-width: 950px) {
+    @mixin-content;
+  }
+}
+@define-mixin xl-devices {
+  @media (min-width: 1100px) {
+    @mixin-content;
+  }
+}
+
+/* Cross Browser Support */
+@define-mixin transform($angle, $tranX, $tranY) {
+  -webkit-transform: rotate($angle) translate($tranX, $tranY);
+  -moz-transform: rotate($angle) translate($tranX, $tranY);
+  -ms-transform: rotate($angle) translate($tranX, $tranY);
+  -o-transform: rotate($angle) translate($tranX, $tranY);
+  transform: rotate($angle) translate($tranX, $tranY);
+}
+@define-mixin transition($property, $duration) {
+  -webkit-transform: $property $duration;
+  -moz-transform: $property $duration;
+  -ms-transform: $property $duration;
+  -o-transform: $property $duration;
+  transition: $property $duration;
+}
+@define-mixin animation($name, $duration) {
+  -webkit-transform: $name $duration;
+  -moz-transform: $name $duration;
+  -ms-transform: $name $duration;
+  -o-transform: $name $duration;
+  animation: $name $duration;
+}

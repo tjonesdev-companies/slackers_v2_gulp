@@ -1,0 +1,32 @@
+/* Font Variables */
+  $primary-font: 'Open Sans', sans-serif;
+  $heading-font: 'Chelsea Market', sans-serif;
+  $subheading-font: 'Gaegu', sans-serif;
+  $arrow-font: 'Lateef', sans-serif;
+
+
+/* Color Variables */
+    /* Red Vars */
+    $persian-red: #D33E3E;
+
+    /* Shades of Gray Vars */
+    $white-smoke: #F0F0F0;
+    $gainsboro: #E6E6E6;
+    $suva-grey: #888888;
+    $mortar: #555555;
+    $nero: #1f1f1f;
+
+/* Color Configurations */
+    /* Main Color Config */
+    $primary-color: $persian-red;
+    $primary-color__transparent: rgba($persian-red, 0.5);
+    $secondary-color: $nero;
+    $secondary-color__transparent: rgba($nero, 0.8);
+    $tertiary-color: $mortar;
+
+    /* Background Color Config */
+    $bkgd__light: $gainsboro;
+
+    /* Text Color Config */
+    $text__light: $white-smoke;
+    $text__dark: $suva-grey;
